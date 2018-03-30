@@ -368,6 +368,11 @@
 		font-size: 2.8em;
 	}
 
+	.title h3
+	{
+		font-size: 2.8em;
+	}
+
 	.title .byline
 	{
 		font-size: 1.3em;
@@ -503,10 +508,10 @@
 	}
 
 /*********************************************************************************/
-/* Featured                                                                      */
+/* Work experience                                                               */
 /*********************************************************************************/
 
-	#featured
+	#workexp
 	{
 		overflow: hidden;
 		margin-bottom: 3em;
