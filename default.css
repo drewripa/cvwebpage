@@ -177,6 +177,7 @@
 		font-size: 1em;
 		font-weight: bold;
 		border-right: 1px solid rgba(0,0,0,.1);
+		color: #0d0d0d
 	}
 
 	ul.style1 .date:after
@@ -229,6 +230,7 @@
 		{
 			padding: 0em 0em 0em 0em;
 			margin: 0 0 0 0;
+			border-top: none;
 		}
 
 
