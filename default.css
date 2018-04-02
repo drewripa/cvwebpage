@@ -236,8 +236,8 @@
 .right {
   width: 75%;
 	border-left: 1px solid rgba(0,0,0,.1);
-	margin: 0.5em 1.5em 0em 0.5em;
-	padding: 1.5em 0em 1.5em 0em;
+	margin: 1.5em 1.5em 1.5em 0em;
+	padding: 1.5em 1.5em 1.5em 1.5em;
 }
 
 .left .date {
@@ -257,17 +257,18 @@
 	color: #0d0d0d
 }
 
-.right .jobtitle {
+.right h3 {
 	padding: 1em 0em 5px 0em;
 	text-transform: uppercase;
 	font-size: 1em;
-	font-weight: 400;
+	font-weight: 900;
 	color: #2D2D2D;
 	text-align: left;
 }
 
 .right a {
 	text-decoration: none;
+	color: #2D2D2D;
 }
 
 .right ul {
@@ -585,7 +586,7 @@
 /* Work experience                                                               */
 /*********************************************************************************/
 
-/*	#workexp
+#workexp
 	{
 		overflow: hidden;
 		margin-bottom: 3em;
