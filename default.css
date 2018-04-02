@@ -257,6 +257,24 @@
 	color: #0d0d0d
 }
 
+.right .jobtitle {
+	padding: 1em 0em 5px 0em;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 400;
+	color: #2D2D2D;
+	text-align: left;
+}
+
+.right a {
+	text-decoration: none;
+}
+
+.right ul {
+	text-align: left;
+	padding-left: 1em;
+}
+
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
 /*********************************************************************************/
