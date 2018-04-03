@@ -273,6 +273,7 @@
 .right ul {
 	text-align: left;
 	padding-left: 1em;
+	list-style-type: disc;
 }
 
 /*********************************************************************************/
