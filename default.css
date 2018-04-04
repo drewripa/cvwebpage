@@ -523,6 +523,100 @@
 		text-align: center;
 	}
 
+
+/*********************************************************************************/
+/* Education                                                                     */
+/*********************************************************************************/
+
+	#education
+	{
+		overflow: hidden;
+		margin-bottom: 3em;
+		padding-top: 5em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+
+	#education .container {
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#education .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1;
+}
+
+#education .timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+
+#education .timeline-block-right {
+    float: right;
+}
+
+#education .timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+#education .timeline-content {
+    direction: ltr;
+}
+
+#education .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    background: #eee;
+    margin-top: 10px;
+    z-index: 999;
+}
+
+#education .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+}
+
+#education .timeline-content h3 {
+    margin-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#education .timeline-content span {
+    font-size: 15px;
+    color: #a4a4a4;
+}
+
+#education .timeline-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    color: #888;
+}
 /*********************************************************************************/
 /* Work experience                                                               */
 /*********************************************************************************/
@@ -597,17 +691,6 @@
 		margin-left: 2em;
 	}
 
-/*********************************************************************************/
-/* Education                                                                     */
-/*********************************************************************************/
-
-	#education
-	{
-		overflow: hidden;
-		margin-bottom: 3em;
-		padding-top: 5em;
-		border-top: 1px solid rgba(0,0,0,0.08);
-	}
 
 /*********************************************************************************/
 /* Sidebar                                                                       */
