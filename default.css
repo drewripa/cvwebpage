@@ -215,66 +215,7 @@
 /* Work experience table style                                                   */
 /*********************************************************************************/
 
-.row {
-	border-top: 1px solid rgba(0,0,0,.1);
-	overflow: hidden;
-}
 
-.firstrow {
-	overflow: hidden;
-}
-
-.column {
-    float: left;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.left {
-  width: 20%;
-}
-
-.right {
-  width: 75%;
-	border-left: 1px solid rgba(0,0,0,.1);
-	margin: 1.5em 1.5em 1.5em 0em;
-	padding: 1.5em 1.5em 1.5em 1.5em;
-}
-
-.left .date {
-	float: left;
-	position: relative;
-	width: 80px;
-	height: 70px;
-	margin: 0.5em 1.5em 0em 0.5em;
-	padding: 1.5em 0em 1.5em 0em;
-	line-height: normal;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.3em;
-	font-weight: bold;
-	color: #0d0d0d
-}
-
-.right h3 {
-	padding: 1em 0em 5px 0em;
-	text-transform: uppercase;
-	font-size: 1em;
-	font-weight: 900;
-	color: #2D2D2D;
-	text-align: left;
-}
-
-.right a {
-	font-weight: 400;
-	color: #2D2D2D;
-}
-
-.right ul {
-	text-align: left;
-	padding-left: 1em;
-	list-style-type: disc;
-}
 
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
@@ -589,9 +530,71 @@
 #workexp
 	{
 		overflow: hidden;
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 		padding-top: 3em;
 		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+
+	#workexp .row {
+		border-top: 1px solid rgba(0,0,0,.1);
+		overflow: hidden;
+	}
+
+	#workexp .firstrow {
+		overflow: hidden;
+	}
+
+	#workexp .column {
+	    float: left;
+	    padding: 30px;
+	    box-sizing: border-box;
+	}
+
+	#workexp .left {
+	  width: 20%;
+	}
+
+	#workexp .right {
+	  width: 75%;
+		border-left: 1px solid rgba(0,0,0,.1);
+		margin: 1.5em 1.5em 1.5em 0em;
+		padding: 1.5em 1.5em 1.5em 1.5em;
+	}
+
+	#workexp .left .date {
+		float: left;
+		position: relative;
+		width: 80px;
+		height: 70px;
+		margin: 0.5em 1.5em 0em 0.5em;
+		padding: 1.5em 0em 1.5em 0em;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		font-weight: bold;
+		color: #0d0d0d
+	}
+
+	#workexp .right h3 {
+		padding: 1em 0em 5px 0em;
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 900;
+		color: #2D2D2D;
+		text-align: left;
+	}
+
+	#workexp .right a {
+		font-weight: 400;
+		color: #2D2D2D;
+	}
+
+	#workexp .right ul {
+		text-align: left;
+		padding-left: 1em;
+		list-style-type: disc;
+		margin-left: 2em;
 	}
 
 /*********************************************************************************/
