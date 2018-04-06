@@ -530,12 +530,16 @@
 		color: #444444;
 	}
 
+	#intro p {
+		font-size: 1.12em;
+	}
+
 
 /*********************************************************************************/
 /* Education                                                                     */
 /*********************************************************************************/
 
-	#education
+#education
 	{
 		overflow: hidden;
 		margin-bottom: 3em;
@@ -543,7 +547,7 @@
 		border-top: 1px solid rgba(0,0,0,0.08);
 	}
 
-	#education .timeline {
+#education .timeline {
     padding: 50px 0;
     position: relative;
     overflow: hidden;
