@@ -532,7 +532,7 @@
 	{
 		overflow: hidden;
 		margin-bottom: 3em;
-		padding-top: 5em;
+		padding-top: 3em;
 		border-top: 1px solid rgba(0,0,0,0.08);
 	}
 
@@ -577,14 +577,6 @@
 #education .timeline-block-left {
     float: left;
     direction: rtl;
-}
-
-#education .timeline-block-left .marker {
-	left: -8px;
-}
-
-#education .timeline-block-right .marker {
-	right: 8px;
 }
 
 #education .timeline-content {
