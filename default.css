@@ -275,12 +275,14 @@
 	.title .byline
 	{
 		font-size: 1.3em;
+		font-weight: 400;
 		color: #6F6F6F;
 	}
 
 	.title .byline2
 	{
 		font-size: 1em;
+		font-weight: 400;
 		color: #6F6F6F;
 	}
 
@@ -620,9 +622,10 @@
     box-sizing: border-box;
 }
 #skills .skillbar-title {
-    top: -22px;
+    top: -28px;
     position: absolute;
-    font-size: 12px;
+    font-size: large;
+		font-weight: 600;
     text-transform: uppercase;
 }
 
