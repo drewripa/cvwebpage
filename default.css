@@ -627,7 +627,6 @@
     position: absolute;
     font-size: large;
 		font-weight: 600;
-    text-transform: uppercase;
 }
 
 #skills .skillbar-bar {
@@ -652,6 +651,7 @@
 #skills .row {
 		overflow: hidden;
     box-sizing: border-box;
+		padding: 0.6em 3em;
 	}
 
 .p5 {
