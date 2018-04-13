@@ -746,15 +746,17 @@
 		border-top: 1px solid rgba(0,0,0,0.08);
 	}
 
+#hobbies .firstrow {
+    overflow: hidden;
+	  box-sizing: border-box;
+	  margin: 0.6em 3em;
+}
+
 #hobbies .row {
 		overflow: hidden;
 		box-sizing: border-box;
 		margin: 0.6em 3em;
 		border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-#hobbies .row .first {
-		border-top: none;
 }
 
 #hobbies .hobbies-block {
@@ -769,6 +771,7 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.3em;
+	padding-bottom: 0.3em;
 }
 
 #hobbies .hobbies-desc {
