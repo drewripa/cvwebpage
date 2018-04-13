@@ -750,13 +750,18 @@
 		overflow: hidden;
 		box-sizing: border-box;
 		padding: 0.6em 3em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+#hobbies .row .first {
+		border-top: none;
 }
 
 #hobbies .hobbies-block {
 	 box-sizing: border-box;
 	 float: left;
 	 width: 80%;
-	 padding: 1.2em 0.3em;
+	 padding: 1.2em 1.5em;
 }
 
 #hobbies .hobbies-title {
