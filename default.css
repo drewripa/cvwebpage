@@ -749,7 +749,7 @@
 #hobbies .row {
 		overflow: hidden;
 		box-sizing: border-box;
-		padding: 0.6em 3em;
+		margin: 0.6em 3em;
 		border-top: 1px solid rgba(0,0,0,0.08);
 }
 
