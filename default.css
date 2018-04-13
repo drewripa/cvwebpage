@@ -754,11 +754,31 @@
 
 #hobbies .hobbies-block {
 	 box-sizing: border-box;
+	 float: left;
+	 width: 80%;
+	 padding: 1.2em 0.3em;
+}
+
+#hobbies .hobbies-title {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.3em;
+}
+
+#hobbies .hobbies-desc {
+	text-align: justify;
 }
 
 
 #hobbies img {
 		float: left;
+		width: 20%;
+		padding-top: 0.5em;
+}
+
+#hobbies a {
+	color: #2D2D2D;
 }
 
 /*********************************************************************************/
