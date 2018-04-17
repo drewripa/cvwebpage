@@ -272,11 +272,6 @@
 		font-size: 2em;
 	}
 
-	.title h4
-	{
-		font-size: 1.6em;
-	}
-
 	.title .byline
 	{
 		font-size: 1.3em;
@@ -658,6 +653,11 @@
     box-sizing: border-box;
 		padding: 0.6em 3em;
 	}
+
+#skills h4 {
+	font-size: 1.6em;
+	margin: 0.5em 0em;
+}
 
 .p5 {
 	width: 5%;
