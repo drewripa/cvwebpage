@@ -840,20 +840,22 @@
 }
 
 #contacts .cv {
-  background: #2a2a2a;
+	background: #2a2a2a;
   width: 80%;
   margin-left: 1em;
   padding: 1em 0em;
+  color: #bfbfbf;
 }
 
 #contacts .cv-a {
-  display:block;
-  color: #bfbfbf;
+	display:block;
+  color: inherit;
   font-weight:600;
 }
 
 #contacts .cv:hover {
-  background: #5eb4de;
+	background: #5eb4de;
+  color: #fbfbfb
 }
 
 /*********************************************************************************/
