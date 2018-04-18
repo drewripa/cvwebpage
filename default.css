@@ -819,6 +819,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+	padding: 1em 0em;
 }
 
 #contacts .contact-type {
@@ -830,6 +831,10 @@
 
 #contacts .map {
   filter: grayscale(100%);
+}
+
+#contacts h4 {
+	text-align: left;
 }
 
 /*********************************************************************************/
