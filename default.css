@@ -369,7 +369,8 @@
 
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
-		background-color: #5eb4de
+		background-color: #5eb4de;
+		color: #fbfbfb;
 	}
 
 	#menu .current_page_item a
