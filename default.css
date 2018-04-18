@@ -827,6 +827,7 @@
 }
 #contacts .contact-content {
   width: 80%;
+	text-align: left;
 }
 
 #contacts .map {
@@ -834,7 +835,6 @@
 }
 
 #contacts a {
-	text-align: left;
 	text-decoration: none;
 	color: #333333;
 }
