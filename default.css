@@ -833,8 +833,10 @@
   filter: grayscale(100%);
 }
 
-#contacts h4 {
+#contacts a {
 	text-align: left;
+	text-decoration: none;
+	color: #333333;
 }
 
 /*********************************************************************************/
