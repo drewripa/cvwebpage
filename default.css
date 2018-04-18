@@ -364,12 +364,12 @@
 		text-decoration:  none;
 		text-transform: uppercase;
 		font-weight: 700;
-		color: rgba(255,255,255,0.5);
+		color: #bfbfbf;
 	}
 
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
-		background-color: #3960c6
+		background-color: #5eb4de
 	}
 
 	#menu .current_page_item a
@@ -819,7 +819,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-	padding: 1em 0em;
+	padding: 1em 0em 1em 2em;
 }
 
 #contacts .contact-type {
@@ -837,6 +837,23 @@
 #contacts a {
 	text-decoration: none;
 	color: #333333;
+}
+
+#contacts .cv {
+  background: #2a2a2a;
+  width: 80%;
+  margin-left: 1em;
+  padding: 1em 0em;
+}
+
+#contacts .cv-a {
+  display:block;
+  color: #bfbfbf;
+  font-weight:600;
+}
+
+#contacts .cv:hover {
+  background: #5eb4de;
 }
 
 /*********************************************************************************/
