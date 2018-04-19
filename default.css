@@ -867,8 +867,9 @@
   display: inline-flex;
 }
 
-#contacts .social img {
-  margin: 2em 1em;
+#contacts .social a {
+  display: inline-flex;
+	margin: 2em 1em;
 }
 
 /*********************************************************************************/
