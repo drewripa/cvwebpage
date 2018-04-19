@@ -863,8 +863,12 @@
   color: #fbfbfb
 }
 
+#contacts .social {
+  display: inline-flex;
+}
+
 #contacts .social img {
-  margin: 2em 2em;
+  margin: 2em 1em;
 }
 
 /*********************************************************************************/
