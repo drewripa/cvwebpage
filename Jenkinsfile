@@ -14,12 +14,12 @@ pipeline {
         script {
           containerID = sh (
             script: 'docker ps --filter name=nginx -q',
-            returnStatus: true
+            returnStdout: true
             )
           if (containerID == '') {
             sh 'docker run --name nginx --restart always -d -p 80:80 -v \$(pwd):/usd/share/nginx/html nginx:latest'
           } else {
-
+            echo "Container ${containerID} exists"
           }
         }
       }
