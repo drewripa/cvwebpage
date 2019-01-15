@@ -12,7 +12,7 @@ pipeline {
     stage ('Raise Container') {
       steps {
         script {
-          def containerID = sh (
+          containerID = sh (
             script: 'docker ps --filter name=nginx -q',
             returnStatus: true
             )
