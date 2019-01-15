@@ -1,5 +1,5 @@
 pipeline {
-  agent 'linux'
+  agent {label: 'linux'}
   stages {
     stage ('Checkout') {
       checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/drewripa/cvwebpage.git']]])
