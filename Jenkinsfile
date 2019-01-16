@@ -12,14 +12,14 @@ pipeline {
     stage ('Raise Container') {
       steps {
         script {
-          def containerID = sh (
-            script: 'docker ps --filter name=nginx -q',
-            returnStatus: true
+          containerID = sh (
+            script: 'docker ps --filter name=httpd -q',
+            returnStdout: true
             )
           if (containerID == '') {
-            sh 'docker run --name nginx --restart always -d -p 80:80 -v \$(pwd):/usd/share/nginx/html nginx:latest'
+            sh 'docker run --name httpd --restart always -d -p 80:80 -v \$(pwd):/usr/local/apache2/htdocs/ httpd:latest'
           } else {
-
+            echo "Container ${containerID} exists"
           }
         }
       }
