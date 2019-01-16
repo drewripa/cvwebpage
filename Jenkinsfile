@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           withCredentials([usernamePassword(credentialsId: 'telegram_chatid_token', passwordVariable: 'TGTOKEN', usernameVariable: 'TGCHAT')]) {
-              MESSAGE = "\xF0\x9F\x9A\xA8 Build ${BUILD_NUMBER} started."
+              MESSAGE = "\\xF0\\x9F\\x9A\\xA8 Build ${BUILD_NUMBER} started."
               sh "curl -s -X POST https://api.telegram.org/bot$TGTOKEN/sendMessage -d chat_id=$TGCHAT -d text=\$\'$MESSAGE\'"
             }
           }
@@ -34,7 +34,7 @@ pipeline {
     success {
         script {
           withCredentials([usernamePassword(credentialsId: 'telegram_chatid_token', passwordVariable: 'TGTOKEN', usernameVariable: 'TGCHAT')]) {
-              MESSAGE = "\xF0\x9F\x8C\x9E Build ${BUILD_NUMBER} finished successfully."
+              MESSAGE = "\\xF0\\x9F\\x8C\\x9E Build ${BUILD_NUMBER} finished successfully."
               sh "curl -s -X POST https://api.telegram.org/bot$TGTOKEN/sendMessage -d chat_id=$TGCHAT -d text=\$\'$MESSAGE\'"
           }
         }
@@ -42,7 +42,7 @@ pipeline {
     failure {
         script {
           withCredentials([usernamePassword(credentialsId: 'telegram_chatid_token', passwordVariable: 'TGTOKEN', usernameVariable: 'TGCHAT')]) {
-              MESSAGE = "\xE2\x98\x94 Build ${BUILD_NUMBER} finished with errors."
+              MESSAGE = "\\xE2\\x98\\x94 Build ${BUILD_NUMBER} finished with errors."
               sh "curl -s -X POST https://api.telegram.org/bot$TGTOKEN/sendMessage -d chat_id=$TGCHAT -d text=\$\'$MESSAGE\'"
           }
         }
