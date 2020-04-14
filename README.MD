@@ -27,4 +27,4 @@ Feel free to clone and edit this repository while you specify copyrights.
 
 ### Ansible usage
 
-If you familiar with Ansible, then you can use [this](https://github.com/drewripa/ansiblepublic) repo with [this](https://github.com/drewripa/ansiblepublic/blob/master/cvwebpage.yaml) playbook for automatic setup for RedHat based OS.
+If you familiar with Ansible, then you can use [this](https://github.com/drewripa/ansiblepublic) repo with [this](https://github.com/drewripa/ansiblepublic/blob/master/cvwebpage.yaml) playbook for automatic setup for Debian based OS.
