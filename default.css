@@ -84,9 +84,20 @@
 
 	.image-full
 	{
+		width: 100%;
+		height: 100%;
 		display: block;
 		width: 100%;
 		margin: 0 0 2em 0;
+	}
+
+	.image-overlay
+	{
+		position: absolute;
+		bottom: -6em;
+		right: 2em;
+		border: 0.5em solid #FFF;
+		border-radius: 50%;
 	}
 
 	.image-left
@@ -262,9 +273,15 @@
 		text-transform: uppercase;
 	}
 
-	.title h2
+	.title .name
 	{
-		font-size: 2.8em;
+		margin: 0;
+		padding: 0;
+		font-weight: 600;
+		color: #333333;
+		font-size: 4.5em;
+		text-align: left;
+		margin-left: 40px;
 	}
 
 	.title h3
@@ -276,6 +293,8 @@
 	{
 		font-size: 1.3em;
 		font-weight: 400;
+		text-align: left;
+		margin-left: 40px;
 		color: #6F6F6F;
 	}
 
@@ -389,7 +408,8 @@
 
 	#banner
 	{
-		margin-bottom: 3em;
+		margin-bottom: 2em;
+		position: relative;
 	}
 
 /*********************************************************************************/
@@ -424,11 +444,13 @@
 
 #intro a {
 		color: #444444;
-	}
+}
 
 #intro p {
 		font-size: 1.12em;
-	}
+		text-align: justify;
+    	text-indent: 1.5em;
+}
 
 
 /*********************************************************************************/
