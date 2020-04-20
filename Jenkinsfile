@@ -7,8 +7,8 @@ pipeline {
       steps {
         script {
           withCredentials([usernamePassword(credentialsId: 'telegram_chatid_token', passwordVariable: 'TGTOKEN', usernameVariable: 'TGCHAT')]) {
-              MESSAGE = "\\xF0\\x9F\\x9A\\xA8 Build ${BUILD_NUMBER} started."
-              sh "curl -s -X POST https://api.telegram.org/bot$TGTOKEN/sendMessage -d chat_id=$TGCHAT -d text=\$\'$MESSAGE\'"
+              MESSAGE = "%F0%9F%9A%A8 Build ${BUILD_NUMBER} started."
+              sh "curl -s -X POST https://api.telegram.org/bot${TGTOKEN}/sendMessage -d chat_id=${TGCHAT} -d text=\"${MESSAGE}\""
             }
           }
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/drewripa/cvwebpage.git']]])
@@ -34,16 +34,16 @@ pipeline {
     success {
         script {
           withCredentials([usernamePassword(credentialsId: 'telegram_chatid_token', passwordVariable: 'TGTOKEN', usernameVariable: 'TGCHAT')]) {
-              MESSAGE = "\\xF0\\x9F\\x8C\\x9E Build ${BUILD_NUMBER} finished successfully."
-              sh "curl -s -X POST https://api.telegram.org/bot$TGTOKEN/sendMessage -d chat_id=$TGCHAT -d text=\$\'$MESSAGE\'"
+              MESSAGE = "%F0%9F%8C%9E Build ${BUILD_NUMBER} finished successfully."
+              sh "curl -s -X POST https://api.telegram.org/bot${TGTOKEN}/sendMessage -d chat_id=${TGCHAT} -d text=\"${MESSAGE}\""
           }
         }
     }
     failure {
         script {
           withCredentials([usernamePassword(credentialsId: 'telegram_chatid_token', passwordVariable: 'TGTOKEN', usernameVariable: 'TGCHAT')]) {
-              MESSAGE = "\\xE2\\x98\\x94 Build ${BUILD_NUMBER} finished with errors."
-              sh "curl -s -X POST https://api.telegram.org/bot$TGTOKEN/sendMessage -d chat_id=$TGCHAT -d text=\$\'$MESSAGE\'"
+              MESSAGE = "%E2%98%94 Build ${BUILD_NUMBER} finished with errors."
+              sh "curl -s -X POST https://api.telegram.org/bot${TGTOKEN}/sendMessage -d chat_id=${TGCHAT} -d text=\"${MESSAGE}\""
           }
         }
     }
